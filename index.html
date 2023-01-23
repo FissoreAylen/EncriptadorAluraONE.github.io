@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Título de su sitio web-->
+    <title>Encriptador Alura</title>
+
+    <!-- ctrl+space da sugestiones de rutas-->
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    
+</head>
+    
+<body>
+
+    <header>
+        <img src="imagenes/logoAlura.png" alt="Logo Alura" class="logoAlura">
+    </header>
+
+    <main>
+        <section>
+            <!--Campo para el texto que va a ser encriptado/desencriptado
+            el textarea es más versatil y nos permite ingresar texto multilínea-->
+            <textarea style="font-family: 'Inter', sans-serif;" class="input-texto" cols="40" rows="6" placeholder="Ingrese el texto aquí"></textarea>
+
+            <p class="informacion">Solo letras minúsculas y sin acentos</p>
+
+            <div class="botones">
+                <!--Un botón para encriptar-->
+                <button class="encriptar" onclick="btnEncriptar()">Encriptar</button>
+                <!--Un botón para desencriptar-->
+                <button class="desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>    
+
+        </section>
+
+        <section>
+            <!--Área para mostrar el texto encriptado/desencriptado.-->
+            <textarea class="mensaje" cols="18" rows="10"></textarea>
+            <div class="textos">
+                <p id="txt1">Ningún mensaje fue encontrado</p>
+                <p id="txt2">Ingrese el texto que desees encriptar o desencriptar</p>
+            </div>
+            
+
+            <button class="copiar">Copiar</button>
+        </section>
+        
+    </main>
+
+    <script src="script.js"></script>
+
+    
+
+
+    
+    
+    
+   
+    
+
+    
+</body>
+
+<footer>
+    Aylen Fissore Vergara, Córdoba Argentina
+</footer>
+</html>

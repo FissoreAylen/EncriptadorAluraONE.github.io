@@ -1,0 +1,222 @@
+body {
+    background-color: #e5e5e5;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-bottom: 50px;
+}
+
+.logoAlura {
+    margin-left: 16px;
+    margin-top: 24px;
+
+    width: 32px;
+    height: 48px;
+}
+
+.input-texto {
+    margin: 7px 8px;
+    width: 75vw;
+    height: 50vh;
+
+    background-color: #e5e5e5;
+    border-style: none;
+    
+    font-family: Inter;
+    font-size: 5vw;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #0A3871;
+    font-family: Inter;
+
+}
+
+.mensaje {
+    width: 69vw;
+
+    display: flex;
+    padding: 20px;
+    margin-top: 40px;
+
+    
+    border: none;
+    box-shadow: 0px 24px 32px -8px #00000014;
+    border-radius: 32px;
+
+
+}
+.textos {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 70vw;
+    position: absolute;
+    top: 700px;
+    left: 50px;
+}
+
+#txt1 {
+    
+    
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    color:#343a40;
+
+}
+
+#txt2 {
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #495057;
+}
+
+.copiar {
+    margin-top: 15px;
+    border: 1px solid #0A3871;
+    color: #0A3871;
+
+}
+
+.botones {
+    display:flex;
+    flex-direction: column;
+
+
+}
+
+.encriptar {
+    background-color: #0a3871;
+    color: white;
+    border-style: none;
+    margin-bottom: 15px;
+}
+
+.desencriptar {
+    background-color: #d8dfe8;
+    border: 1px solid #0A3871;
+    color: #0A3871;
+}
+
+.informacion {
+    font-size: 12px;
+    color: #495057;
+    opacity: 0.8;
+    
+}
+
+.encriptar, .desencriptar, .copiar{
+    width: 80vw;
+    height: 60px;
+    
+    gap: 8px;
+    border-radius: 24px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+
+    
+
+}
+
+footer {
+    text-align: center;
+    vertical-align: bottom;
+
+    font-size: 16px;
+    color: #495057;
+    opacity: 0.8;
+}
+
+
+/* celular */
+
+@media screen and (min-width: 376px) {
+    main {  
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 26px;
+        margin-bottom: 50px;
+    }
+    
+    body {
+        margin: 40px 30px;
+    }
+
+    .input-texto{
+        width: 87vw;
+    }
+
+    .botones {
+        flex-direction: row;
+    }
+    
+    .informacion {
+        margin-left: 30px;
+        font-size: 20px;
+    }
+    .encriptar {
+        margin-left: 20px;
+        margin-right: 10px;
+    }
+    
+    .encriptar, .desencriptar, .copiar{
+        padding: 24px;
+        width: 332px;
+        height: 67px;
+
+        font-size: 24px;
+    }
+
+    .mensaje {
+        justify-content: center;
+        margin-left: 14px;
+        width: 90%;
+        height: 10vh;
+
+        padding: 30px;
+
+        font-size: 32px;
+    }
+
+    .textos {
+        top: 980px;
+        left: 115px;
+
+    }
+
+    
+}
+
+
+
+section {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 1040px) {
+    .mensaje {
+        background-image: url("imagenes/Muñeco.png");
+        background-repeat: no-repeat;
+        background-position: center 40%;
+        background-size: 300px;
+    }
+}
